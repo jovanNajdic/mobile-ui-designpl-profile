@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background: #f8fefa; }
+
+.wrapper {
+  overflow-x: hidden;
+  max-width: 375px;
+  min-width: 330px; }
+
+.header {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(to right, #a977e1, #ee6b95);
+  color: #fffeff; }
+  .header .nav {
+    width: 100%;
+    padding: 25px 18px;
+    display: flex;
+    justify-content: space-between; }
+    .header .nav .menu {
+      width: 20px;
+      height: 2px;
+      background: #fffeff;
+      display: block;
+      position: relative;
+      cursor: pointer; }
+      .header .nav .menu::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        background: #fffeff;
+        display: block;
+        top: 5px;
+        left: 0; }
+      .header .nav .menu::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #fffeff;
+        display: block;
+        top: 10px;
+        left: 0; }
+    .header .nav .title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 14px; }
+
+.container {
+  width: 90%;
+  max-width: 90%;
+  transform: translateY(-80px);
+  border-radius: 8px;
+  margin: 0 auto;
+  background: #fffeff;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  padding: 25px 20px; }
+  .container-header {
+    width: 100%; }
+    .container-header .profile-info {
+      padding-top: 10px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif; }
+      .container-header .profile-info img {
+        width: 110px;
+        height: 110px;
+        padding: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 0 60px #e3d3f5; }
+      .container-header .profile-info .profile-name {
+        padding-top: 20px;
+        padding-bottom: 30px; }
+        .container-header .profile-info .profile-name h3 {
+          font-weight: 400;
+          margin-bottom: 12px;
+          color: #454545; }
+        .container-header .profile-info .profile-name span {
+          color: #a0a0a0;
+          font-weight: 500;
+          padding: 0 10px;
+          font-size: 14px; }
+          .container-header .profile-info .profile-name span:first-of-type {
+            border-right: 1px solid #818181; }
+  .container-body {
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.22); }
+    .container-body .body-website {
+      font-family: 'Roboto', sans-serif; }
+      .container-body .body-website h5 {
+        color: #454545;
+        font-weight: 500;
+        margin-bottom: 10px; }
+      .container-body .body-website a {
+        color: #7499d9;
+        text-decoration: none;
+        font-size: 14px; }
+      .container-body .body-website > span {
+        float: right;
+        margin-top: -3px; }
+        .container-body .body-website > span span {
+          margin-right: 10px;
+          font-size: 22px;
+          opacity: 0.8;
+          color: #818181; }
+    .container-body .body-bio {
+      margin-top: 20px;
+      font-family: 'Roboto', sans-serif; }
+      .container-body .body-bio h5 {
+        color: #454545;
+        font-weight: 500;
+        margin-bottom: 5px; }
+      .container-body .body-bio p {
+        margin-top: 10px;
+        color: #9b9b9b;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500; }
+  .container-footer {
+    margin-top: 20px;
+    padding: 20px 0 0 0;
+    border-top: 2px solid #e7e7e7;
+    display: flex;
+    justify-content: space-between; }
+    .container-footer > div {
+      display: flex;
+      font-family: 'Roboto', sans-serif; }
+      .container-footer > div i {
+        font-size: 40px;
+        padding: 10px 10px 10px 0;
+        color: #c1c1c1; }
+      .container-footer > div a {
+        font-size: 12px;
+        font-weight: 400 !important;
+        text-decoration: none;
+        color: #818181; }
+      .container-footer > div div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .container-footer > div div h4 {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 22px; }
